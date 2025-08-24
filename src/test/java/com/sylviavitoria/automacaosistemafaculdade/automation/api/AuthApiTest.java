@@ -43,6 +43,19 @@ class AuthApiTest {
                 .path("accessToken");
     }
 
+    private String loginComoProfessor() {
+        return given()
+                .contentType(ContentType.JSON)
+                .body("{ \"email\": \"maria.silva@universidade.com\", \"senha\": \"123\" }")
+                .when()
+                .post("/api/v1/auth/login")
+                .then()
+                .statusCode(200)
+                .body("accessToken", notNullValue())
+                .extract()
+                .path("accessToken");
+    }
+
     @Test
     void deveFazerLoginAdminERetornarToken() {
         String tokenAdmin = loginComoAdmin();
@@ -53,6 +66,12 @@ class AuthApiTest {
     void deveFazerLoginAlunoERetornarToken() {
         String tokenAluno = loginComoAluno();
         System.out.println("Token do Aluno: " + tokenAluno);
+    }
+
+    @Test
+    void deveFazerLoginProfessorERetornarToken() {
+        String tokenProfessor = loginComoProfessor();
+        System.out.println("Token do Professor: " + tokenProfessor);
     }
 
     @Test
@@ -102,7 +121,7 @@ class AuthApiTest {
     }
 
     @Test
-    void acessoSemTokenRetorna401() {
+    void acessoSemTokenRetorna403() {
         given()
                 .when()
                 .get("/api/v1/alunos")
