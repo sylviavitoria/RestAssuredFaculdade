@@ -33,7 +33,7 @@ class AuthApiTest {
     private String loginComoAluno() {
         return given()
                 .contentType(ContentType.JSON)
-                .body("{ \"email\": \"joao.silva@email.com\", \"senha\": \"123\" }")
+                .body("{ \"email\": \"luanasilva@universidade.com\", \"senha\": \"123\" }")
                 .when()
                 .post("/api/v1/auth/login")
                 .then()
@@ -46,7 +46,7 @@ class AuthApiTest {
     private String loginComoProfessor() {
         return given()
                 .contentType(ContentType.JSON)
-                .body("{ \"email\": \"maria.silva@universidade.com\", \"senha\": \"123\" }")
+                .body("{ \"email\": \"lucassilva@universidade.com\", \"senha\": \"123\" }")
                 .when()
                 .post("/api/v1/auth/login")
                 .then()
@@ -89,7 +89,7 @@ class AuthApiTest {
     void naoDeveFazerLoginComUsuarioInexistente() {
         given()
                 .contentType(ContentType.JSON)
-                .body("{ \"email\": \"usuario@inexistente.com\", \"senha\": \"123\" }")
+                .body("{ \"email\": \"matheus@gmail.com\", \"senha\": \"123\" }")
                 .when()
                 .post("/api/v1/auth/login")
                 .then()
