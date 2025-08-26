@@ -15,14 +15,14 @@ Este projeto de testes automatizados consome a **API REST** desenvolvida em **Sp
 Este projeto contém testes automatizados para um sistema de gestão de faculdade, utilizando RestAssured para testar a API do sistema.
 
 
-## Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
 - Java
 - JUnit 5
 - RestAssured
 - Maven
 
-## Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 O projeto está organizado em pacotes de testes separados por domínio:
 
@@ -32,9 +32,9 @@ O projeto está organizado em pacotes de testes separados por domínio:
 - `DisciplinaApiTest`: Testes relacionados aos endpoints de disciplinas
 - `MatriculaApiTest`: Testes relacionados aos endpoints de matrículas
 
-## Levantamento de Testes
+## 📋 Levantamento de Testes
 
-### Autenticação e Permissões
+### 🔑 Autenticação e Permissões
 
 | Teste | Descrição | Resultado |
 |-------|-----------|-----------|
@@ -43,7 +43,7 @@ O projeto está organizado em pacotes de testes separados por domínio:
 | [API] Acesso a endpoint protegido sem token | Verifica se não é possível acessar recursos protegidos sem token | Com falha |
 | [API] Acesso a endpoint protegido com token inválido ou sem permissão | Verifica se não é possível acessar recursos protegidos com token inválido | Com falha |
 
-### Aluno
+### 👨‍🎓 Aluno
 
 | Teste | Descrição | Resultado |
 |-------|-----------|-----------|
@@ -57,7 +57,7 @@ O projeto está organizado em pacotes de testes separados por domínio:
 | [API] Cadastro de aluno sem email | Verifica se o campo email é obrigatório | Com falha |
 | [API] Cadastro de aluno sem senha | Verifica se o campo senha é obrigatório | Com falha |
 
-### Professor
+### 👩‍🏫 Professor
 
 | Teste | Descrição | Resultado |
 |-------|-----------|-----------|
@@ -71,7 +71,7 @@ O projeto está organizado em pacotes de testes separados por domínio:
 | [API] Cadastro de professor sem email | Verifica se o campo email é obrigatório | Com falha |
 | [API] Cadastro de professor sem senha | Verifica se o campo senha é obrigatório | Com falha |
 
-### Disciplina
+### 📚 Disciplina
 
 | Teste | Descrição | Resultado |
 |-------|-----------|-----------|
@@ -84,7 +84,7 @@ O projeto está organizado em pacotes de testes separados por domínio:
 | [API] Professor tentando criar disciplina | Verifica se professores não podem criar disciplinas | Com falha |
 | [API] Aluno tentando criar disciplina | Verifica se alunos não podem criar disciplinas | Com falha |
 
-### Matrícula
+### 📝 Matrícula
 
 | Teste | Descrição | Resultado |
 |-------|-----------|-----------|
@@ -98,14 +98,14 @@ O projeto está organizado em pacotes de testes separados por domínio:
 
 # 🌬️ Como Executar
 
-### Pré-requisitos
+### 🛠️ Pré-requisitos
 
 - Java 21 ou superior
 - Maven 3.6 ou superior
 - Clone e configure [repositório do back-end](https://github.com/sylviavitoria/faculdade-backend) para funcionamento completo 
 - API do sistema de faculdade em execução na porta 8080
 
-## Passo a passo para Execução
+## 💻 Passo a passo para Execução
 
 ### 1. Clone o repositório
 ```bash
