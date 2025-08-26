@@ -8,7 +8,8 @@
 
 Este projeto de testes automatizados consome a **API REST** desenvolvida em **Spring Boot** para gerenciamento acadêmico.  
 
-- O backend está disponível em: [faculdade-backend](https://github.com/sylviavitoria/faculdade-backend)  
+- O backend está disponível em: [faculdade-backend](https://github.com/sylviavitoria/faculdade-backend)
+> ⚠️ Para testar a funcionalidade completa, é necessário configurar também o **backend**.
 
 ---
 
