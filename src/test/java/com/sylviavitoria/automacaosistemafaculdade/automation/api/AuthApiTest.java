@@ -128,4 +128,14 @@ class AuthApiTest {
                 .then()
                 .statusCode(403);
     }
+    @Test
+    void acessoComTokenInvalidoDeveRetornar403() {
+        given()
+                .header("Authorization", "Bearer " + "token-invalido-123")
+                .when()
+                .get("/api/v1/alunos")
+                .then()
+                .statusCode(403);
+    }
+
 }
