@@ -1,4 +1,4 @@
-# Automação de Testes - Sistema de Faculdade
+# 🎓 Sistema de Gerenciamento Acadêmico - Automação com Rest Assured
 [![RestAssured](https://img.shields.io/badge/RestAssured-4.5.0-00BFFF?style=flat&logo=java&logoColor=white)](https://rest-assured.io/)
 [![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.4-6DB33F?style=flat&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
